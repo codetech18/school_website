@@ -209,6 +209,21 @@ section{
     transform: rotate(90deg);
 }
 
+.account-form .login-display{
+    border: var(--border);
+    padding: 2rem;
+    display: none;
+}
+
+
+.account-form .login-display h3{
+    font-size: 2rem;
+    line-height: 40px;
+    padding-bottom: .5rem;
+    text-transform: capitalize;
+    color: var(--green);
+}
+
 .account-form form{
     border: var(--border);
     padding: 2rem;
@@ -255,6 +270,18 @@ form .flex label{
 .account-form form .flex a:hover{
     text-decoration: underline;
     color: var(--green);
+}
+
+.account-form form #login-btn{
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.account-form form #register-btn{
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .account-form form .btn{
