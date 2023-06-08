@@ -48,23 +48,27 @@
 
         <form action="" class="login-form active">
             <h3>login Now</h3>
-            <input type="email" placeholder="enter your email" class="box">
-            <input type="password" placeholder="enter your password" class="box">
+            <input type="email" id="login-email" placeholder="enter your email" required class="box">
+            <input type="password" id="login-password" placeholder="enter your password" required class="box">
             <div class="flex">
                 <input type="checkbox" name="" id="remember-me">
                 <label for="remember-me">remember-me</label>
                 <a href="#">forgot password?</a>
             </div>
-            <input type="submit" value="login now" class="btn">
+            <input  value="login now" id="login-btn" class="btn">
         </form>
 
         <form action="" class="register-form">
             <h3>Register Now</h3>
-            <input type="email" placeholder="enter your email" class="box">
-            <input type="password" placeholder="enter your password" class="box">
-            <input type="password" placeholder="confirm your password" class="box">
-            <input type="submit" value="Register now" class="btn">
+            <input type="email" id="register-email" placeholder="enter your email" required class="box">
+            <input type="password" id="register-password" placeholder="enter your password" required class="box">
+            <input type="password" placeholder="confirm your password" required class="box">
+            <input  value="Register now" id="register-btn" class="btn">
         </form>
+
+        <div id="result-box" class="login-display">
+            <h3 id="result"></h3>
+        </div>
     </div>
 
     <section class="heading-link">
@@ -286,6 +290,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>
