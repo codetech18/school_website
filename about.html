@@ -1,275 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-   <!-- swiper link css -->
-   <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- swiper link css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
     <!-- css link -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- header section starts -->
 
     <header class="header">
-        <a href="" class="logo"><i class="fas fa-lightbulb"></i>educa</a>
+      <a href="" class="logo"><i class="fas fa-lightbulb"></i>educa</a>
 
-        <nav class="navbar">
-            <div id="close-navbar" class="fas fa-times"></div>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="courses.html">Courses</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+      <nav class="navbar">
+        <div id="close-navbar" class="fas fa-times"></div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-        <div class="icons">
-            <div id="account-btn" class="fas fa-user"></div>
-            <div id="menu-btn" class="fas fa-bars"></div>
-        </div>
+      <div class="icons">
+        <div id="account-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
     </header>
 
     <!-- account form section starts here -->
 
     <div class="account-form">
+      <div id="close-form" class="fas fa-times"></div>
 
-        <div id="close-form" class="fas fa-times"></div>
+      <div class="buttons">
+        <span class="btn active login-btn">login</span>
+        <span class="btn register-btn">register</span>
+      </div>
 
-        <div class="buttons">
-            <span class="btn active login-btn">login</span>
-            <span class="btn register-btn">register</span>
+      <form action="" class="login-form active">
+        <h3>login Now</h3>
+        <input
+          type="email"
+          id="login-email"
+          placeholder="enter your email"
+          required
+          class="box"
+        />
+        <input
+          type="password"
+          id="login-password"
+          placeholder="enter your password"
+          required
+          class="box"
+        />
+        <div class="flex">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">remember-me</label>
+          <a href="#">forgot password?</a>
         </div>
+        <input value="login now" id="login-btn" class="btn" />
+      </form>
 
-        <form action="" class="login-form active">
-            <h3>login Now</h3>
-            <input type="email" id="login-email" placeholder="enter your email" required class="box">
-            <input type="password" id="login-password" placeholder="enter your password" required class="box">
-            <div class="flex">
-                <input type="checkbox" name="" id="remember-me">
-                <label for="remember-me">remember-me</label>
-                <a href="#">forgot password?</a>
-            </div>
-            <input  value="login now" id="login-btn" class="btn">
-        </form>
+      <form action="" class="register-form">
+        <h3>Register Now</h3>
+        <input
+          type="email"
+          id="register-email"
+          placeholder="enter your email"
+          required
+          class="box"
+        />
+        <input
+          type="password"
+          id="register-password"
+          placeholder="enter your password"
+          required
+          class="box"
+        />
+        <input
+          type="password"
+          placeholder="confirm your password"
+          required
+          class="box"
+        />
+        <input value="Register now" id="register-btn" class="btn" />
+      </form>
 
-        <form action="" class="register-form">
-            <h3>Register Now</h3>
-            <input type="email" id="register-email" placeholder="enter your email" required class="box">
-            <input type="password" id="register-password" placeholder="enter your password" required class="box">
-            <input type="password" placeholder="confirm your password" required class="box">
-            <input  value="Register now" id="register-btn" class="btn">
-        </form>
-
-        <div id="result-box" class="login-display">
-            <h3 id="result"></h3>
-        </div>
+      <div id="result-box" class="login-display">
+        <h3 id="result"></h3>
+      </div>
     </div>
 
-
     <section class="heading-link">
-        <h3>about us</h3>
-        <p> <a href="index.html">home</a> / about</p>
-
+      <h3>about us</h3>
+      <p><a href="index.html">home</a> / about</p>
     </section>
 
     <!-- about section starts -->
 
     <section class="about">
+      <div class="image">
+        <img src="images/Exams-bro.png" alt="" />
+      </div>
 
-        <div class="image">
-            <img src="images/Exams-bro.png" alt="">
+      <div class="content">
+        <h3 class="about-title">We Offer Courses That Empower Your Future</h3>
+        <p>
+          Our mission is to provide top-quality learning experiences that help
+          you gain practical skills, grow professionally, and achieve your
+          goals. Whether you're exploring new career paths or upgrading your
+          expertise, our courses are designed to make learning simple, engaging,
+          and effective. With expert instructors and hands-on lessons, we give
+          you the tools to succeed in today’s competitive world.
+        </p>
+        <div class="icons-container">
+          <div class="icons">
+            <img src="images/newspaper.png" alt="" />
+            <h3>350+</h3>
+            <span>courses</span>
+          </div>
+          <div class="icons">
+            <img src="images/medal (1).png" alt="" />
+            <h3>10+</h3>
+            <span>awards</span>
+          </div>
+          <div class="icons">
+            <img src="images/reading (1).png" alt="" />
+            <h3>100+</h3>
+            <span>students</span>
+          </div>
         </div>
-
-        <div class="content">
-            <h3 class="about-title">we have the best courses for you</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, maiores neque adipisci porro,
-                autem voluptate itaque consequatur dignissimos ut eum, nulla quo corporis libero nobis quas esse.
-                Natus, iste ad?
-            </p>
-            <div class="icons-container">
-                <div class="icons">
-                    <img src="images/newspaper.png" alt="">
-                    <h3>350+</h3>
-                    <span>courses</span>
-                </div>
-                <div class="icons">
-                    <img src="images/medal (1).png" alt="">
-                    <h3>10+</h3>
-                    <span>awards</span>
-                </div>
-                <div class="icons">
-                    <img src="images/reading (1).png" alt="">
-                    <h3>100+</h3>
-                    <span>students</span>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
-
 
     <!-- about section ends -->
 
     <!-- teacher section starts -->
 
-
     <section class="teachers">
+      <h1 class="heading">expert teachers</h1>
 
-        <h1 class="heading">expert teachers</h1>
-
-        <div class="teachers-slider">
-
-            <div class="w">
-                
-                <div class="slide">
-                    <div class="image">
-                        <img src="images/review_4.png" alt="">
-                        <div class="share">
-                            <a href="" class="fab fa-facebook-f"></a>
-                            <a href="" class="fab fa-twitter"></a>
-                            <a href="" class="fab fa-instagram"></a>
-                            <a href="" class="fab fa-linkedin"></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>john doe</h3>
-                        <span>expert tutor</span>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div class="image">
-                        <img src="images/review_1.png" alt="">
-                        <div class="share">
-                            <a href="" class="fab fa-facebook-f"></a>
-                            <a href="" class="fab fa-twitter"></a>
-                            <a href="" class="fab fa-instagram"></a>
-                            <a href="" class="fab fa-linkedin"></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>john doe</h3>
-                        <span>expert tutor</span>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="image">
-                        <img src="images/review_2.png" alt="">
-                        <div class="share">
-                            <a href="" class="fab fa-facebook-f"></a>
-                            <a href="" class="fab fa-twitter"></a>
-                            <a href="" class="fab fa-instagram"></a>
-                            <a href="" class="fab fa-linkedin"></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>john doe</h3>
-                        <span>expert tutor</span>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="image">
-                        <img src="images/review_3.png" alt="">
-                        <div class="share">
-                            <a href="" class="fab fa-facebook-f"></a>
-                            <a href="" class="fab fa-twitter"></a>
-                            <a href="" class="fab fa-instagram"></a>
-                            <a href="" class="fab fa-linkedin"></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>john doe</h3>
-                        <span>expert tutor</span>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="image">
-                        <img src="images/review_2.png" alt="">
-                        <div class="share">
-                            <a href="" class="fab fa-facebook-f"></a>
-                            <a href="" class="fab fa-twitter"></a>
-                            <a href="" class="fab fa-instagram"></a>
-                            <a href="" class="fab fa-linkedin"></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>john doe</h3>
-                        <span>expert tutor</span>
-                    </div>
-                </div>
-                
-                
+      <div class="teachers-slider">
+        <div class="w">
+          <div class="slide">
+            <div class="image">
+              <img src="images/review_4.png" alt="" />
+              <div class="share">
+                <a href="" class="fab fa-facebook-f"></a>
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-instagram"></a>
+                <a href="" class="fab fa-linkedin"></a>
+              </div>
             </div>
-           
+            <div class="content">
+              <h3>john doe</h3>
+              <span>expert tutor</span>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="image">
+              <img src="images/review_1.png" alt="" />
+              <div class="share">
+                <a href="" class="fab fa-facebook-f"></a>
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-instagram"></a>
+                <a href="" class="fab fa-linkedin"></a>
+              </div>
+            </div>
+            <div class="content">
+              <h3>john doe</h3>
+              <span>expert tutor</span>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image">
+              <img src="images/review_2.png" alt="" />
+              <div class="share">
+                <a href="" class="fab fa-facebook-f"></a>
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-instagram"></a>
+                <a href="" class="fab fa-linkedin"></a>
+              </div>
+            </div>
+            <div class="content">
+              <h3>john doe</h3>
+              <span>expert tutor</span>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image">
+              <img src="images/review_3.png" alt="" />
+              <div class="share">
+                <a href="" class="fab fa-facebook-f"></a>
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-instagram"></a>
+                <a href="" class="fab fa-linkedin"></a>
+              </div>
+            </div>
+            <div class="content">
+              <h3>john doe</h3>
+              <span>expert tutor</span>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image">
+              <img src="images/review_2.png" alt="" />
+              <div class="share">
+                <a href="" class="fab fa-facebook-f"></a>
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-instagram"></a>
+                <a href="" class="fab fa-linkedin"></a>
+              </div>
+            </div>
+            <div class="content">
+              <h3>john doe</h3>
+              <span>expert tutor</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
-
-
-
 
     <!-- teacher section ends -->
 
-
-
     <!-- footer section -->
     <section class="footer">
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3><i class="fas fa-lightbulb"></i>educa</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, temporibus!</p>
-                <div class="share">
-                    <a href="" class="fab fa-facebook-f"></a>
-                    <a href="" class="fab fa-twitter"></a>
-                    <a href="" class="fab fa-instagram"></a>
-                    <a href="" class="fab fa-linkedin"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <h3>Quick links</h3>
-                <a href="home.html" class="link">home</a>
-                <a href="about.html" class="link">about</a>
-                <a href="courses.html" class="link">courses</a>
-                <a href="contact.html" class="link">contact</a>
-            </div>
-
-            <div class="box">
-                <h3>Useful links</h3>
-                <a href="#" class="link">help center</a>
-                <a href="#" class="link">ask question</a>
-                <a href="#" class="link">send feedback</a>
-                <a href="#" class="link">private policy</a>
-                <a href="#" class="link">terms of use</a>
-            </div>
-
-            <div class="box">
-                <h3>Newsletter</h3>
-                <form action="">
-                    <input type="email" placeholder="enter your email" class="email">
-                    <input type="submit" value="Subscribe" class="btn">
-                </form>
-                <p>Subscribe for latest updates</p>
-                
-            </div>
+      <div class="box-container">
+        <div class="box">
+          <h3><i class="fas fa-lightbulb"></i>educa</h3>
+          <p>
+            Gain practical knowledge, work on real projects, and take the next
+            step toward your dream career.
+          </p>
+          <div class="share">
+            <a href="" class="fab fa-facebook-f"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-instagram"></a>
+            <a href="" class="fab fa-linkedin"></a>
+          </div>
         </div>
-        <div class="credit">created by <span>Codetech</span> | all rights reserved! </div>
+
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="home.html" class="link">home</a>
+          <a href="about.html" class="link">about</a>
+          <a href="courses.html" class="link">courses</a>
+          <a href="contact.html" class="link">contact</a>
+        </div>
+
+        <div class="box">
+          <h3>Useful links</h3>
+          <a href="#" class="link">help center</a>
+          <a href="#" class="link">ask question</a>
+          <a href="#" class="link">send feedback</a>
+          <a href="#" class="link">private policy</a>
+          <a href="#" class="link">terms of use</a>
+        </div>
+
+        <div class="box">
+          <h3>Newsletter</h3>
+          <form action="">
+            <input type="email" placeholder="enter your email" class="email" />
+            <input type="submit" value="Subscribe" class="btn" />
+          </form>
+          <p>Subscribe for latest updates</p>
+        </div>
+      </div>
+      <div class="credit">
+        created by <span>Codetech</span> | all rights reserved!
+      </div>
     </section>
-
-
-
 
     <!-- swiper link js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-
     <script type="module" src="js/script.js"></script>
-</body>
+  </body>
 </html>
