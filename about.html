@@ -36,7 +36,7 @@
 
       <div class="icons">
         <div id="account-btn" class="fas fa-user"></div>
-        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="menu-btn" class="fas fa-bars" style="display: none"></div>
       </div>
     </header>
 
@@ -46,61 +46,68 @@
       <div id="close-form" class="fas fa-times"></div>
 
       <div class="buttons">
-        <span class="btn active login-btn">login</span>
-        <span class="btn register-btn">register</span>
+        <span class="btn active login-btn">Login</span>
+        <span class="btn register-btn">Register</span>
       </div>
 
+      <!-- Login Form -->
       <form action="" class="login-form active">
-        <h3>login Now</h3>
+        <h3>Login Now</h3>
         <input
           type="email"
           id="login-email"
-          placeholder="enter your email"
+          placeholder="Enter your email"
           required
           class="box"
         />
         <input
           type="password"
           id="login-password"
-          placeholder="enter your password"
+          placeholder="Enter your password"
           required
           class="box"
         />
         <div class="flex">
-          <input type="checkbox" name="" id="remember-me" />
-          <label for="remember-me">remember-me</label>
-          <a href="#">forgot password?</a>
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+          <a href="#">Forgot password?</a>
         </div>
-        <input value="login now" id="login-btn" class="btn" />
+        <input value="Login now" id="login-btn" class="btn" />
       </form>
 
+      <!-- Register Form -->
       <form action="" class="register-form">
         <h3>Register Now</h3>
         <input
           type="email"
           id="register-email"
-          placeholder="enter your email"
+          placeholder="Enter your email"
           required
           class="box"
         />
         <input
           type="password"
           id="register-password"
-          placeholder="enter your password"
+          placeholder="Enter your password"
           required
           class="box"
         />
         <input
           type="password"
-          placeholder="confirm your password"
+          placeholder="Confirm your password"
           required
           class="box"
         />
         <input value="Register now" id="register-btn" class="btn" />
       </form>
 
-      <div id="result-box" class="login-display">
-        <h3 id="result"></h3>
+      <!-- Quick Links -->
+      <div class="quick-links-form">
+        <h3>Quick Links</h3>
+        <a href="index.html" class="btn">🏠 Home</a>
+        <a href="about.html" class="btn">ℹ️ About</a>
+        <a href="courses.html" class="btn">📚 Courses</a>
+        <a href="contact.html" class="btn">📞 Contact</a>
       </div>
     </div>
 
@@ -256,7 +263,7 @@
 
         <div class="box">
           <h3>Quick links</h3>
-          <a href="home.html" class="link">home</a>
+          <a href="index.html" class="link">home</a>
           <a href="about.html" class="link">about</a>
           <a href="courses.html" class="link">courses</a>
           <a href="contact.html" class="link">contact</a>
@@ -280,9 +287,7 @@
           <p>Subscribe for latest updates</p>
         </div>
       </div>
-      <div class="credit">
-        created by <span>Codetech</span> | all rights reserved!
-      </div>
+      <div class="credit">| all rights reserved!</div>
     </section>
 
     <!-- swiper link js -->

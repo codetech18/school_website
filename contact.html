@@ -1,276 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <!-- swiper link css -->
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
     <!-- css link -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- header section starts -->
 
     <header class="header">
-        <a href="" class="logo"><i class="fas fa-lightbulb"></i>educa</a>
+      <a href="" class="logo"><i class="fas fa-lightbulb"></i>educa</a>
 
-        <nav class="navbar">
-            <div id="close-navbar" class="fas fa-times"></div>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="courses.html">Courses</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+      <nav class="navbar">
+        <div id="close-navbar" class="fas fa-times"></div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-        <div class="icons">
-            <div id="account-btn" class="fas fa-user"></div>
-            <div id="menu-btn" class="fas fa-bars"></div>
-        </div>
+      <div class="icons">
+        <div id="account-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars" style="display: none"></div>
+      </div>
     </header>
 
     <!-- account form section starts here -->
 
     <div class="account-form">
+      <div id="close-form" class="fas fa-times"></div>
 
-        <div id="close-form" class="fas fa-times"></div>
+      <div class="buttons">
+        <span class="btn active login-btn">Login</span>
+        <span class="btn register-btn">Register</span>
+      </div>
 
-        <div class="buttons">
-            <span class="btn active login-btn">login</span>
-            <span class="btn register-btn">register</span>
+      <!-- Login Form -->
+      <form action="" class="login-form active">
+        <h3>Login Now</h3>
+        <input
+          type="email"
+          id="login-email"
+          placeholder="Enter your email"
+          required
+          class="box"
+        />
+        <input
+          type="password"
+          id="login-password"
+          placeholder="Enter your password"
+          required
+          class="box"
+        />
+        <div class="flex">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+          <a href="#">Forgot password?</a>
         </div>
+        <input value="Login now" id="login-btn" class="btn" />
+      </form>
 
-        <form action="" class="login-form active">
-            <h3>login Now</h3>
-            <input type="email" id="login-email" placeholder="enter your email" required class="box">
-            <input type="password" id="login-password" placeholder="enter your password" required class="box">
-            <div class="flex">
-                <input type="checkbox" name="" id="remember-me">
-                <label for="remember-me">remember-me</label>
-                <a href="#">forgot password?</a>
-            </div>
-            <input  value="login now" id="login-btn" class="btn">
-        </form>
+      <!-- Register Form -->
+      <form action="" class="register-form">
+        <h3>Register Now</h3>
+        <input
+          type="email"
+          id="register-email"
+          placeholder="Enter your email"
+          required
+          class="box"
+        />
+        <input
+          type="password"
+          id="register-password"
+          placeholder="Enter your password"
+          required
+          class="box"
+        />
+        <input
+          type="password"
+          placeholder="Confirm your password"
+          required
+          class="box"
+        />
+        <input value="Register now" id="register-btn" class="btn" />
+      </form>
 
-        <form action="" class="register-form">
-            <h3>Register Now</h3>
-            <input type="email" id="register-email" placeholder="enter your email" required class="box">
-            <input type="password" id="register-password" placeholder="enter your password" required class="box">
-            <input type="password" placeholder="confirm your password" required class="box">
-            <input  value="Register now" id="register-btn" class="btn">
-        </form>
-
-        <div id="result-box" class="login-display">
-            <h3 id="result"></h3>
-        </div>
+      <!-- Quick Links -->
+      <div class="quick-links-form">
+        <h3>Quick Links</h3>
+        <a href="index.html" class="btn">🏠 Home</a>
+        <a href="about.html" class="btn">ℹ️ About</a>
+        <a href="courses.html" class="btn">📚 Courses</a>
+        <a href="contact.html" class="btn">📞 Contact</a>
+      </div>
     </div>
 
-
     <section class="heading-link">
-        <h3>Contact Us</h3>
-        <p> <a href="index.html">home</a> / contact</p>
-
+      <h3>Contact Us</h3>
+      <p><a href="index.html">home</a> / contact</p>
     </section>
 
     <!-- contact section starts -->
 
     <section class="contact">
+      <h1 class="heading">get in touch</h1>
 
-        <h1 class="heading"> get in touch</h1>
+      <div class="icons-container">
+        <div class="icons">
+          <i class="fas fa-clock"></i>
+          <h3>opening hours</h3>
+          <p>00:07 to 00:06pm</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-phone"></i>
+          <h3>phone :</h3>
+          <p>+234-905-897-7101</p>
+          <p>+234-905-897-7101</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-envelope"></i>
+          <h3>email :</h3>
+          <p>akoredealao18@gmail.com</p>
+          <p>codetech1807@gmail.com</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-map"></i>
+          <h3>address :</h3>
+          <p>ikeja - lagos</p>
+        </div>
+      </div>
 
-        <div class="icons-container">
-
-            <div class="icons">
-                <i class="fas fa-clock"></i>
-                <h3>opening hours</h3>
-                <p>00:07 to 00:06pm</p>
-            </div>
-            <div class="icons">
-                <i class="fas fa-phone"></i>
-                <h3>phone :</h3>
-                <p>+234-905-897-7101</p>
-                <p>+234-905-897-7101</p>
-            </div>
-            <div class="icons">
-                <i class="fas fa-envelope"></i>
-                <h3>email : </h3>
-                <p>akoredealao18@gmail.com</p>
-                <p>codetech1807@gmail.com</p>
-            </div>
-            <div class="icons">
-                <i class="fas fa-map"></i>
-                <h3>address :</h3>
-                <p>ikeja - lagos</p>
-            </div>
+      <div class="row">
+        <div class="image">
+          <img src="images/Exams-amico.png" alt="" />
         </div>
 
-        <div class="row">
-
-            <div class="image">
-                <img src="images/Exams-amico.png" alt="">
-            </div>
-
-            <form action="https://formspree.io/f/xgebjqar" method="POST">
-                <h3>send us message</h3>
-                <input type="text" name="name" class="box" placeholder="name">
-                <input type="email" class="box" name="email" placeholder="email">
-                <input type="number" class="box" name="number" placeholder="number">
-                <textarea name="text" placeholder="message" id="" cols="30" rows="10" class="box"></textarea>
-                <input type="submit" value="send message" class="btn">
-            </form>
-        </div>
+        <form action="https://formspree.io/f/xgebjqar" method="POST">
+          <h3>send us message</h3>
+          <input type="text" name="name" class="box" placeholder="name" />
+          <input type="email" class="box" name="email" placeholder="email" />
+          <input type="number" class="box" name="number" placeholder="number" />
+          <textarea
+            name="text"
+            placeholder="message"
+            id=""
+            cols="30"
+            rows="10"
+            class="box"
+          ></textarea>
+          <input type="submit" value="send message" class="btn" />
+        </form>
+      </div>
     </section>
-
-
 
     <!-- contact section ends -->
     <!-- faq section starts -->
 
     <section class="faq">
-        <h1 class="heading">frequently asked questions</h1>
+      <h1 class="heading">frequently asked questions</h1>
 
-        <div class="accordion-container">
-
-            <div class="accordion active">
-                <div class="accordion-heading">
-                    <h3>how to contact  for help?</h3>
-                    <i class="fas fa-angle-down"></i>
-                </div>
-                <p class="accordion-content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi tenetur fugit deserunt,
-                    aliquam quibusdam architecto dignissimos? Illum perferendis atque voluptates tempora,
-                    quod adipisci, explicabo odit itaque maxime ut, perspiciatis quidem?
-                </p>
-            </div>
-            
-            <div class="accordion">
-                <div class="accordion-heading">
-                    <h3>what is the best carrer in 2023?</h3>
-                    <i class="fas fa-angle-down"></i>
-                </div>
-                <p class="accordion-content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi tenetur fugit deserunt,
-                    aliquam quibusdam architecto dignissimos? Illum perferendis atque voluptates tempora,
-                    quod adipisci, explicabo odit itaque maxime ut, perspiciatis quidem?
-                </p>
-            </div>
-
-            <div class="accordion">
-                <div class="accordion-heading">
-                    <h3>how much fees for web development?</h3>
-                    <i class="fas fa-angle-down"></i>
-                </div>
-                <p class="accordion-content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi tenetur fugit deserunt,
-                    aliquam quibusdam architecto dignissimos? Illum perferendis atque voluptates tempora,
-                    quod adipisci, explicabo odit itaque maxime ut, perspiciatis quidem?
-                </p>
-            </div>
-
-            <div class="accordion">
-                <div class="accordion-heading">
-                    <h3>can i choose my own tutor?</h3>
-                    <i class="fas fa-angle-down"></i>
-                </div>
-                <p class="accordion-content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi tenetur fugit deserunt,
-                    aliquam quibusdam architecto dignissimos? Illum perferendis atque voluptates tempora,
-                    quod adipisci, explicabo odit itaque maxime ut, perspiciatis quidem?
-                </p>
-            </div>
-
-            <div class="accordion">
-                <div class="accordion-heading">
-                    <h3>what payment methods are availabl?</h3>
-                    <i class="fas fa-angle-down"></i>
-                </div>
-                <p class="accordion-content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi tenetur fugit deserunt,
-                    aliquam quibusdam architecto dignissimos? Illum perferendis atque voluptates tempora,
-                    quod adipisci, explicabo odit itaque maxime ut, perspiciatis quidem?
-                </p>
-            </div>
-
-            <div class="accordion">
-                <div class="accordion-heading">
-                    <h3>can i have a free trail for a month?</h3>
-                    <i class="fas fa-angle-down"></i>
-                </div>
-                <p class="accordion-content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi tenetur fugit deserunt,
-                    aliquam quibusdam architecto dignissimos? Illum perferendis atque voluptates tempora,
-                    quod adipisci, explicabo odit itaque maxime ut, perspiciatis quidem?
-                </p>
-            </div>
+      <div class="accordion-container">
+        <div class="accordion active">
+          <div class="accordion-heading">
+            <h3>how to contact for help?</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
+            tenetur fugit deserunt, aliquam quibusdam architecto dignissimos?
+            Illum perferendis atque voluptates tempora, quod adipisci, explicabo
+            odit itaque maxime ut, perspiciatis quidem?
+          </p>
         </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <h3>what is the best carrer in 2023?</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
+            tenetur fugit deserunt, aliquam quibusdam architecto dignissimos?
+            Illum perferendis atque voluptates tempora, quod adipisci, explicabo
+            odit itaque maxime ut, perspiciatis quidem?
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <h3>how much fees for web development?</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
+            tenetur fugit deserunt, aliquam quibusdam architecto dignissimos?
+            Illum perferendis atque voluptates tempora, quod adipisci, explicabo
+            odit itaque maxime ut, perspiciatis quidem?
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <h3>can i choose my own tutor?</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
+            tenetur fugit deserunt, aliquam quibusdam architecto dignissimos?
+            Illum perferendis atque voluptates tempora, quod adipisci, explicabo
+            odit itaque maxime ut, perspiciatis quidem?
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <h3>what payment methods are availabl?</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
+            tenetur fugit deserunt, aliquam quibusdam architecto dignissimos?
+            Illum perferendis atque voluptates tempora, quod adipisci, explicabo
+            odit itaque maxime ut, perspiciatis quidem?
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <h3>can i have a free trail for a month?</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
+            tenetur fugit deserunt, aliquam quibusdam architecto dignissimos?
+            Illum perferendis atque voluptates tempora, quod adipisci, explicabo
+            odit itaque maxime ut, perspiciatis quidem?
+          </p>
+        </div>
+      </div>
     </section>
-
-
 
     <!-- faq section ends -->
 
-
-
     <!-- footer section -->
     <section class="footer">
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3><i class="fas fa-lightbulb"></i>educa</h3>
-                <p>Gain practical knowledge, work on real projects, and take the next
-            step toward your dream career.</p>
-                <div class="share">
-                    <a href="" class="fab fa-facebook-f"></a>
-                    <a href="" class="fab fa-twitter"></a>
-                    <a href="" class="fab fa-instagram"></a>
-                    <a href="" class="fab fa-linkedin"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <h3>Quick links</h3>
-                <a href="home.html" class="link">home</a>
-                <a href="about.html" class="link">about</a>
-                <a href="courses.html" class="link">courses</a>
-                <a href="contact.html" class="link">contact</a>
-            </div>
-
-            <div class="box">
-                <h3>Useful links</h3>
-                <a href="#" class="link">help center</a>
-                <a href="#" class="link">ask question</a>
-                <a href="#" class="link">send feedback</a>
-                <a href="#" class="link">private policy</a>
-                <a href="#" class="link">terms of use</a>
-            </div>
-
-            <div class="box">
-                <h3>Newsletter</h3>
-                <form action="">
-                    <input type="email" placeholder="enter your email" class="email">
-                    <input type="submit" value="Subscribe" class="btn">
-                </form>
-                <p>Subscribe for latest updates</p>
-                
-            </div>
+      <div class="box-container">
+        <div class="box">
+          <h3><i class="fas fa-lightbulb"></i>educa</h3>
+          <p>
+            Gain practical knowledge, work on real projects, and take the next
+            step toward your dream career.
+          </p>
+          <div class="share">
+            <a href="" class="fab fa-facebook-f"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-instagram"></a>
+            <a href="" class="fab fa-linkedin"></a>
+          </div>
         </div>
-        <div class="credit">created by <span>Codetech</span> | all rights reserved! </div>
+
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="index.html" class="link">home</a>
+          <a href="about.html" class="link">about</a>
+          <a href="courses.html" class="link">courses</a>
+          <a href="contact.html" class="link">contact</a>
+        </div>
+
+        <div class="box">
+          <h3>Useful links</h3>
+          <a href="#" class="link">help center</a>
+          <a href="#" class="link">ask question</a>
+          <a href="#" class="link">send feedback</a>
+          <a href="#" class="link">private policy</a>
+          <a href="#" class="link">terms of use</a>
+        </div>
+
+        <div class="box">
+          <h3>Newsletter</h3>
+          <form action="">
+            <input type="email" placeholder="enter your email" class="email" />
+            <input type="submit" value="Subscribe" class="btn" />
+          </form>
+          <p>Subscribe for latest updates</p>
+        </div>
+      </div>
+      <div class="credit">| all rights reserved!</div>
     </section>
-
-
-
 
     <!-- swiper link js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-
     <script type="module" src="js/script.js"></script>
-</body>
+  </body>
 </html>
