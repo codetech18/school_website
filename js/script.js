@@ -62,7 +62,8 @@ document.querySelector("#close-form").onclick = () => {
 
 // firebase auth code
 
-document.getElementById("login-btn").addEventListener("click", function () {
+document.getElementById("login-btn").addEventListener("click", function (e) {
+  e.preventDefault();
   const loginEmail = document.getElementById("login-email").value;
   const loginPassword = document.getElementById("login-password").value;
 
@@ -97,7 +98,8 @@ document.getElementById("login-btn").addEventListener("click", function () {
     });
 });
 
-document.getElementById("register-btn").addEventListener("click", function () {
+document.getElementById("register-btn").addEventListener("click", function (e) {
+  e.preventDefault();
   const registerEmail = document.getElementById("register-email").value;
   const registerPassword = document.getElementById("register-password").value;
 
